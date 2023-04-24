@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManager.WebAPI", "UserM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManager.Domain", "UserManager.Domain\UserManager.Domain.csproj", "{44E2BE04-BA32-481E-9559-554B89629450}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManager.Infrastracture", "UserManager.Infrastracture\UserManager.Infrastracture.csproj", "{8088ADD8-B9C3-40E9-92E1-92B741DAAA7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManager.Infrastructure", "UserManager.Infrastructure\UserManager.Infrastructure.csproj", "{8088ADD8-B9C3-40E9-92E1-92B741DAAA7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UserManager.Domain.IRepository;
 using UserManager.Domain.ValueObjects;
 
-namespace UserManager.Infrastracture
+namespace UserManager.Infrastructure
 {
     public class MockSmsCodeSender : ISmsCodeSender
     {

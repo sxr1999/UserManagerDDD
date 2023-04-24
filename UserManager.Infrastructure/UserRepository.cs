@@ -12,7 +12,7 @@ using UserManager.Domain.IRepository;
 using UserManager.Domain.ResultEvent;
 using UserManager.Domain.ValueObjects;
 
-namespace UserManager.Infrastracture
+namespace UserManager.Infrastructure
 {
     public class UserRepository : IUserRepository
     {

@@ -8,26 +8,19 @@ using System.Threading.Tasks;
 using UserManager.Domain.Entities;
 using UserManager.Domain.ValueObjects;
 
-namespace UserManager.Infrastracture.EntityConfig
+namespace UserManager.Infrastructure.EntityConfig
 {
-    internal class UserConfig : IEntityTypeConfiguration<User>
+    internal class UserLoginHistoryConfig : IEntityTypeConfiguration<UserLoginHistory>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<UserLoginHistory> builder)
         {
-            //设置表名
-            builder.ToTable("T_Users");
+            builder.ToTable("T_UserLoginHistorys");
             //配置值类型
             builder.OwnsOne<PhoneNumber>(x => x.PhoneNumber, pn =>
             {
                 pn.Property(x => x.RegionNumber).HasMaxLength(5).IsUnicode(false);
                 pn.Property(x => x.Number).HasMaxLength(20).IsUnicode(false);
             });
-            //设置私有变量
-            builder.Property("PasswordHash").HasMaxLength(100).IsUnicode(false);
-            //设置一对一关系
-            builder.HasOne(x => x.UserAccessFail).WithOne(y => y.User).HasForeignKey<UserAccessFail>(z => z.UserId);
-
-
         }
     }
 }

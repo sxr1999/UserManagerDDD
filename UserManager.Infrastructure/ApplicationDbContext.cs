@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UserManager.Domain.Entities;
 
-namespace UserManager.Infrastracture
+namespace UserManager.Infrastructure
 {
     public class ApplicationDbContext : DbContext
     {

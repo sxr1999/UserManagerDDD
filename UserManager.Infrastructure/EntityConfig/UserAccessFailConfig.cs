@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UserManager.Domain.Entities;
 
-namespace UserManager.Infrastracture.EntityConfig
+namespace UserManager.Infrastructure.EntityConfig
 {
     internal class UserAccessFailConfig : IEntityTypeConfiguration<UserAccessFail>
     {
