@@ -21,6 +21,7 @@ namespace UserManager.Infrastracture
         private readonly IDistributedCache _distributedCache;
         private readonly IMediator _mediator;
 
+
         public UserRepository(ApplicationDbContext dbcontext,IDistributedCache distributedCache, IMediator mediator)
         {
             _dbcontext = dbcontext;
